@@ -1,0 +1,227 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+.wheel-container {
+    position: relative;
+    margin: 93px 0;
+}
+
+#wheelCanvas {
+    border-radius: 50%;
+    border: 4px solid #333;
+}
+
+#nameInput {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+
+button {
+    padding: 12px 22px;
+    font-size: 16px;
+    background-color: #34a853;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    background-color: #45a049;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #ddd;
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #d9534f;
+}
+
+/* Logo düzenleme */
+
+#gdglogo{
+    position:absolute;
+    top: 5%;
+    left: 1%;
+    width: 20%;
+    
+}
+#flutterkitap{
+  position:absolute;
+    top: 30%;
+    left: 2%;
+    width: 15%;
+    
+}
+
+#isimbutonlari{
+    position: relative;
+    left: 100px;
+}
+
+#stopButton{
+    background-color: #ea4335;
+    margin-top: 20px;
+
+}
+
+#isimbutonlari{
+    position: absolute;
+    margin-left: 982px;
+    margin-top: 200px;
+}
+
+/* Modal (Pop-up) Stili */
+.modal {
+    display: none; /* Başlangıçta görünmez */
+    position: fixed; 
+    z-index: 1000; /* Üstte görünmesi için yüksek z-index */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Siyah yarı saydam arka plan */
+    justify-content: center; /* Yatay merkezleme */
+    align-items: center; /* Dikey merkezleme */
+}
+
+.modal-content {
+    background-image: url(2_20241012_184516_0001.png);
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 50px; /* Modalın iç boşluğu */
+    border-radius: 30px;
+    text-align: center;
+    position: relative;
+    max-width: 600px; /* Pop-up genişliği artırıldı */
+    width: 80%; /* Ekrana göre esneyen genişlik */
+    height: 300px; /* Daha büyük bir yükseklik eklendi */
+    margin: auto;
+    display: flex; /* Flex kutu modeli kullanarak */
+    flex-direction: column; /* Dikey yerleştirme */
+    justify-content: center; /* Dikeyde ortalama */
+    align-items: center; /* Yatayda ortalama */
+}
+
+/* Çarpı (Kapatma) Butonu */
+.close-button {
+    position: absolute;
+    top: 2px;
+    right: 15px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+/* Kazanan yazısı */
+#winnerText {
+    font-size: 32px; 
+    font-weight: bold;
+}
+
+
+
+
+/* Yazi */
+
+.btn-shine {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 12px 48px;
+    color: #fff;
+    background: linear-gradient(to right, #9f9f9f 0, #fff 10%, blueviolet 20%);
+    background-position: 0;
+    
+    -webkit-background-clip: text;
+    
+
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
+    animation-fill-mode: forwards;
+    -webkit-text-size-adjust: none;
+    font-weight: 550;
+    font-size:40px;
+    text-decoration: none;
+    white-space: nowrap;
+    font-family: "Poppins", sans-serif;
+  }
+  @-moz-keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 180px;
+    }
+    100% {
+      background-position: 380px;
+    }
+  }
+  @-webkit-keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 180px;
+    }
+    100% {
+      background-position: 380px;
+    }
+  }
+  @-o-keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 180px;
+    }
+    100% {
+      background-position: 380px;
+    }
+  }
+  @keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position: 180px;
+    }
+    100% {
+      background-position: 380px;
+    }
+  }
+  

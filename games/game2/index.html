@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>İkili Çekiliş Uygulaması</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>İkili Çekiliş Uygulaması</h1>
+        
+        <div class="draw-boxes">
+            <div class="box">
+                <h2>1. Torba (İsimler)</h2>
+                <textarea id="names" placeholder="İsimleri her satıra bir tane gelecek şekilde yazın"></textarea>
+            </div>
+            
+            <div class="box">
+                <h2>2. Torba (Takımlar)</h2>
+                <textarea id="teams" placeholder="Takımları her satıra bir tane gelecek şekilde yazın"></textarea>
+            </div>
+        </div>
+
+        <button onclick="startDraw()">Çekilişi Başlat</button>
+
+        <div class="result-section">
+            <h2>Eşleşmeler</h2>
+            <div id="matches"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

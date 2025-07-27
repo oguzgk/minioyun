@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tetris Oyunu</title>
+    <link rel="icon" href="images/favicon.ico">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+        }
+        .game-container {
+            text-align: center;
+        }
+        .info-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 250px;
+        }
+        canvas {
+            border: 2px solid black;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+        .score, .high-score {
+            font-size: 24px;
+            margin: 10px;
+            color: #333;
+        }
+        .controls {
+            text-align: left;
+            margin-top: 20px;
+        }
+        .controls h3 {
+            color: #444;
+            margin-bottom: 10px;
+        }
+        .controls p {
+            margin: 5px 0;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="info-container">
+            <h2>Tetris</h2>
+            <div class="score">Skor: <span id="score">0</span></div>
+            <div class="high-score">Rekor: <span id="highScore">0</span></div>
+            <div class="controls">
+                <h3>Kontroller:</h3>
+                <p>← : Sola hareket</p>
+                <p>→ : Sağa hareket</p>
+                <p>↑ : Döndürme</p>
+                <p>↓ : Hızlı düşürme</p>
+            </div>
+        </div>
+        <div class="game-container">
+            <canvas id="tetris" width="400" height="400"></canvas>
+        </div>
+    </div>
+    <script src="tetris.js"></script>
+</body>
+</html> 
